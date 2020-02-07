@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script language="JavaScript">
+    function tambah(form) {
+     a=eval(form.a.value)
+     b=eval(form.b.value)
+     c=eval(form.c.value)
+     d=a+b+c
+     form.hasil.value = d
+    }
+    function kurang(form) {
+     a=eval(form.a.value)
+     b=eval(form.b.value)
+     c=eval(form.c.value)
+     d=a-b-c
+     form.hasil.value = d
+    }
+    function kali(form) {
+     a=eval(form.a.value)
+     b=eval(form.b.value)
+     c=eval(form.c.value)
+     d=a*b*c
+     form.hasil.value = d
+    }
+    function bagi(form) {
+    a=eval(form.a.value)
+     b=eval(form.b.value)
+     c=eval(form.c.value)
+     d=a/b/c
+     form.hasil.value = d
+    }
+  </script>
+</head>
+<body>
+    <form class="kalkulator">
+         <h3>KALKULATOR SEDERHANA</h3>
+            <div class="content" >
+                 Bilangan 1 <input type="text" placeholder="di isi dengan angka" name="a"><input type="checkbox" name="">
+                 <br><br>
+                 Bilangan 2 <input type="text" placeholder="di isi dengan angka" name="b"><input type="checkbox" name="">
+                 <br><br>
+                 Bilangan 3 <input type="text" placeholder="di isi dengan angka" name="c"><input type="checkbox" name="">
+                 <br><br>
+                 <input type="button" value="  +  " onClick="tambah(this.form)">  
+                 <input type="button" value="  -  " onClick="kurang(this.form)">  
+                 <input type="button" value="  x  " onClick="kali(this.form)">  
+                 <input type="button" value="  /  " onClick="bagi(this.form)">
+                 <br><br>  
+                 Hasil <input type="text" class="nilai" name="hasil">
+            </div>
+    </form>
+</body>
+</html>
+
+
